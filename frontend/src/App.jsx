@@ -587,7 +587,7 @@ export default function App() {
     
     const fetchSensor = async (endpoint) => {
       const url = useSensorProxy
-        ? `/api/sensor?host=${encodeURIComponent(espIp)}&path=${encodeURIComponent(endpoint)}`
+        ? `/_/backend/api/sensor?host=${encodeURIComponent(espIp)}&path=${encodeURIComponent(endpoint)}`
         : `http://${espIp}${endpoint}`;
       const response = await fetch(url);
       if (response.ok) {
