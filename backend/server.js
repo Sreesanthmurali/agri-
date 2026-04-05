@@ -57,3 +57,5 @@ app.get('/api/sensor', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Agri Edge API http://localhost:${PORT}`);
 });
+
+export default app;
