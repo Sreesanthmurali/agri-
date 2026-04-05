@@ -54,8 +54,5 @@ app.get('/api/sensor', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Agri Edge API http://localhost:${PORT}`);
-});
-
+// Vercel handles the server execution automatically.
 export default app;

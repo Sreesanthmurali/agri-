@@ -1,18 +1,13 @@
 {
-  "version": 2,
-  "rewrites": [
-    {
-      "source": "/_/backend/(.*)",
-      "destination": "/backend/server.js"
+  "experimentalServices": {
+    "frontend": {
+      "entrypoint": "frontend",
+      "routePrefix": "/",
+      "framework": "vite"
     },
-    {
-      "source": "/(.*)",
-      "destination": "/frontend/$1",
-      "continue": true
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/frontend/index.html"
+    "backend": {
+      "entrypoint": "backend",
+      "routePrefix": "/_/backend"
     }
-  ]
+  }
 }
